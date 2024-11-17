@@ -125,8 +125,8 @@ def handle_message(event):
 	mail_body = event.message.text                      # メール本文
 	
 	""" send_gmail関数実行 """
-    	result = send_gmail(mail_from, mail_to, mail_subject, mail_body)
-	print(result)
+    	#result = send_gmail(mail_from, mail_to, mail_subject, mail_body)
+	#print(result)
 
 
 ## 起動確認用ウェブサイトのトップページ
