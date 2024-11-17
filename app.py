@@ -42,6 +42,8 @@ def send_gmail(mail_from, mail_to, mail_subject, mail_body):
         smtpobj.quit()
 
     except Exception as e:
+	print("Cloudn't send mail")
+	app.logger.info(("Cloudn't send mail")
         print(e)
     
     return "メール送信完了"
