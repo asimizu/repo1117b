@@ -72,6 +72,7 @@ def handle_message(event):
 	## APIを呼んで送信者のプロフィール取得
 	profile = line_bot_api.get_profile(event.source.user_id)
 	display_name = profile.display_name
+	print(f"user_id:{event.source.user_id}")
 
 	## 返信メッセージ編集
 	reply = f'{display_name}さんのメッセージ\n{received_message}'
